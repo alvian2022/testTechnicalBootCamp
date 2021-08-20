@@ -1,13 +1,17 @@
 package projekAlpro;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class cariHuruf {
 	public static void main(String[] args) {
-		
-	cekHuruf("aku calon peserta bootcamp dumbways","o");		
-		
-	}private static int cekHuruf(String kata, String cari) {
+	
+	Scanner in = new Scanner(System.in);
+	String kata = in.nextLine();
+	String cari = in.nextLine();
+	System.out.println(cari+" muncul sebanyak "+cekHuruf(kata,cari)+" kali");
+	}
+	
+	private static int cekHuruf(String kata, String cari) {
 		int jumlah=0;
 		char[] huruf=new char[kata.length()];
 		int angka = kata.indexOf(cari);
@@ -19,8 +23,6 @@ public class cariHuruf {
 			}
 			
 		}
-		System.out.println(cari+" muncul sebanyak "+jumlah+" kali");
-		
 	return jumlah;	
 	}
 
