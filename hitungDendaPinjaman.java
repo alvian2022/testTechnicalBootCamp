@@ -6,7 +6,7 @@ public class hitungDendaPinjaman {
 	hitungDenda(14);	
 		
 		
-	}private static int hitungDenda(int lamaPinjaman) {
+	}private static void hitungDenda(int lamaPinjaman) {
 		int telat=0;
 		int dendaBuku=0;
 		int dendaNovel=0;
@@ -28,7 +28,6 @@ public class hitungDendaPinjaman {
 		System.out.println("Denda Cerpen : "+dendaCerpen);
 		System.out.println("Total : "+total);
 		
-		return total;
 	}
 
 }
